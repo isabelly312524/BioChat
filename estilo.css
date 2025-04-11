@@ -1,0 +1,303 @@
+/*aqui começa o cabeçalho*/
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    background-color: #77cbb0; 
+    text-align: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); 
+    border-radius: 10px; 
+    margin-bottom: 20px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+header h1 {
+    color: #000000; 
+    font-size: 2.5em;
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+nav {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+    color: #000000; /* Cor preta */
+}
+
+nav a:hover{
+    color: #ffffff;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+#folha{
+    height: 100px;
+    width: 100px;
+}
+
+/*aqui acaba o cabeçalho*/
+
+/*aqui começa a pagina da home*/
+.home-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 20px;
+    justify-content: space-between;
+  }
+  
+  .boasvindas {
+    flex: 1;
+    min-width: 300px;
+    max-width: 750px;
+    background-color: #e6fdf7;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #b7e6dc;
+    align-items: center;
+  }
+  
+
+  
+  .formulario-container {
+    flex: 1;
+    min-width: 280px;
+    max-width: 450px;
+    background-color: #f0fdfc;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #a5ddd2;
+  }
+  
+  .formulario-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formulario-container label {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .formulario-container input,
+  .formulario-container select {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .formulario-container button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #6bc3ad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .formulario-container button[type="reset"] {
+    background-color: #c94c4c;
+  }
+
+#intro{
+    text-align: justify;
+}
+
+.home{
+    background-color: #77cbb0; 
+    text-align: justify;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); 
+    border-radius: 10px; 
+    margin-bottom: 20px; 
+    padding: 10px 30px;
+    font-size: 18px;
+}
+
+#imghome{
+
+    height: 400px;
+    width: 650px;
+    
+}
+
+  
+
+/*aqui acaba a pagina da home*/
+
+/*aqui começa a pagina da calculadora*/
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+.calculator {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  h1 {
+    margin-bottom: 20px;
+  }
+  label {
+    display: block;
+    margin: 15px 0 5px;
+  }
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #77cbb0;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .resultado {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .tabela-imc {
+    max-width: 400px;
+    width: 100%;
+  }
+  .tabela-imc h2 {
+    text-align: center;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  th {
+    background-color: #77cbb0;
+    color: black;
+  }
+  .highlight {
+    background-color: #e0f7f1 !important;
+    font-weight: bold;
+  }
+
+  /*aqui acaba a calculadora*/
+
+  /*aqui começa o chat*/
+  .chat-box {
+    max-width: 500px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  .messages {
+    height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+  }
+
+  #entrada {
+    width: 94%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+  .user, .bot {
+    margin: 10px 0;
+  }
+  .user {
+    text-align: right;
+    color: #2b7a78;
+  }
+  .bot {
+    text-align: left;
+    color: #3a3a3a;
+  }
+
+  .chat-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  .info-box {
+    max-width: 300px;
+    background-color: #e0f7f3;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #a5ddd2;
+  }
+  .info-box h2 {
+    margin-top: 0;
+  }
+
+/*rodapé*/
+footer{
+    text-align: center;
+}

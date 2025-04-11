@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="folha.png" id="folha">
+            <h1>BioChat</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="calculadora.html">Calculadora</a></li>
+                <li><a href="chat.html">Chat</a></li>
+            </ul> 
+        </nav>
+    </header>
+    <main>
+        <div class="chat-container">
+          <div class="info-box">
+            <h2> Sobre o BioChat</h2>
+            <p>👋 Bem-vindo ao assistente virtual do <strong>BioChat</strong>!</p>
+            <p>💬 Aqui você pode tirar dúvidas sobre:</p>
+            <ul>
+              <li>🥗 Alimentação saudável</li>
+              <li>🧠 Bem-estar</li>
+              <li>📊 Cálculo de IMC</li>
+              <li>📚 Dicas e informações gerais</li>
+            </ul>
+            <p>❓ Experimente perguntar:</p>
+            <ul>
+              <li>"Qual é meu IMC?"</li>
+              <li>"Me indique uma receita leve"</li>
+              <li>"O que é uma dieta equilibrada?"</li>
+            </ul>
+            <p>🤖 O BioChat responde com base em boas práticas de saúde. Em breve, novas funções!</p>
+          </div>
+          <div class="chat-box">
+            <h1>Chat Simulado</h1>
+            <div class="messages" id="mensagens">
+              <div class="bot">Olá! Sou o BioChat. Como posso te ajudar hoje?</div>
+            </div>
+            <input type="text" id="entrada" placeholder="Digite sua mensagem..." />
+            <button onclick="enviarMensagem()">Enviar</button>
+          </div>
+        </div>
+      </main>
+      
+    
+      <footer>
+        <p>&copy; 2025 - BioChat. Todos os direitos reservados.</p>
+    </footer>
+    
+      <script>
+        function enviarMensagem() {
+          const input = document.getElementById('entrada');
+          const mensagens = document.getElementById('mensagens');
+          const texto = input.value.trim();
+          if (texto === '') return;
+    
+          const userMsg = document.createElement('div');
+          userMsg.className = 'user';
+          userMsg.textContent = texto;
+          mensagens.appendChild(userMsg);
+    
+          const botMsg = document.createElement('div');
+          botMsg.className = 'bot';
+          botMsg.textContent = respostaSimulada(texto);
+          mensagens.appendChild(botMsg);
+    
+          input.value = '';
+          mensagens.scrollTop = mensagens.scrollHeight;
+        }
+    
+        function respostaSimulada(texto) {
+          texto = texto.toLowerCase();
+          if (texto.includes('imc')) {
+            return 'Você pode usar a nossa Calculadora de IMC na aba "Calculadora".';
+          } else if (texto.includes('receita') || texto.includes('dieta')) {
+            return 'Recomendo uma dieta balanceada com frutas, vegetais e proteínas magras.';
+          } else {
+            return 'Desculpe, ainda estou aprendendo! Tente perguntar sobre IMC ou receitas saudáveis.';
+          }
+        }
+      </script>
+  
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="folha.png" id="folha">
+      <h1>BioChat</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="calculadora.html">Calculadora</a></li>
+        <li><a href="chat.html">Chat</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="home-container">
+      <div class="boasvindas">
+        <h1>Bem-vindo(a) ao BioChat</h1>
+        <p id="intro">
+          Seja bem-vindo(a) ao nosso site, um espaço dedicado à sua saúde e bem-estar, onde você pode calcular facilmente seu IMC, receber sugestões de receitas saudáveis e personalizadas, além de contar com um chat inteligente 🤖 que responde suas dúvidas sobre dietas, alimentação equilibrada e hábitos saudáveis. Tudo isso de forma prática, rápida e acessível, para te ajudar a cuidar do seu corpo e alcançar seus objetivos com mais leveza e informação.
+        </p>
+        <img src="slogan.png" alt="" id="imghome">
+      </div>
+
+      <div class="formulario-container">
+        <h2>Gostaríamos de conhecê-lo(a) melhor</h2>
+        <form>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome">
+
+          <label for="idade">Data de nascimento:</label>
+          <input type="date" id="idade" name="idade">
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email">
+
+          <label for="estado">Estado onde mora:</label>
+          <select id="estado" name="estado">
+            <option value="">Selecione seu estado</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+          </select>
+
+          <button type="submit">Enviar</button>
+          <button type="reset">Limpar</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - BioChat. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
